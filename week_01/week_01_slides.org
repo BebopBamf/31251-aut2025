@@ -1,0 +1,64 @@
+#+reveal_init_options: slideNumber:false
+#+title: 31251 Data Structures and Algorithms Tutorial
+#+author: Euan Mendoza
+#+email: euan.j.mendoza@effectfree.dev
+#+date: Week 01
+* Welcome to Week 1 of Data Structures and Algorithms
+* Your Tutor
+
+I am Euan Mendoza.
+
+ * PhD Candidate in theoretical computer science.
+
+* In Class Activity
+
+* Subject Admin Things
+** How to ask questions
+*** Ask on Ed
+*** Ask in Person
+*** Ask by Email
+
+** Assessments Overview
+
+* TODO What to Expect
+** TODO What DSA is About
+** TODO Theoretical vs Practical
+** TODO The Real World
+** TODO How labs are run
+** TODO In this lab
+
+* TODO Editing C++
+** TODO The Ed Environment
+** TODO Recommended Compilers
+** TODO Recommended Text Editors
+** TODO Recommended Extras
+
+* TODO First C++ Program
+
+Here is the classic /Hello World!/ program in C++.
+
+#+begin_src C++ :main no
+// We include the iostream library.
+// This library contains the declaration of
+// the cout object.
+#include <iostream>
+
+int main() {
+    // Standard library objects are put in a "namespace" called std.
+    // This is to avoid name collisions with names we define.
+    // To refer to objects in the std namespace we use the scope resolution
+    // operator ::, as in std::cout
+    std::cout << "Hello World\n";
+    return 0;
+}
+#+end_src
+
+#+RESULTS:
+: Hello World
+
+* TODO Reading Input
+* TODO Using user inputs and casting
+* TODO Functions and Testing
+** TODO Aside: Makefiles and Build Systems
+* TODO Pointers and References
+* TODO Classes in C++
