@@ -1,4 +1,5 @@
 #include <iostream>
+
 // this time we will also use the string library
 #include <string>
 
@@ -9,6 +10,12 @@ int main() {
     // again access it with std:: using the
     // scope resolution operator
     std::string userInput{};
+
+    std::cout << "INPUT: ";
+    std::cin >> userInput;
+
+    std::cout << "OUTPUT: " << userInput << "\n";
+
     // use cin to read keyboard input into userInput
     /***
     your code here

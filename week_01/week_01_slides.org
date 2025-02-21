@@ -1,4 +1,4 @@
-#+property: header-args :flags -Wall -Wextra -Werror -std=c++20
+#+property: header-args :flags -Wall -Wextra -std=c++20
 #+reveal_init_options: slideNumber:false
 #+title: 31251 Data Structures and Algorithms Tutorial
 #+author: Euan Mendoza
@@ -37,14 +37,14 @@ What makes a algorithm? What makes a data structure, why is it important.
  * Sketching and streaming algorithms.
  * Low level programming.
 
-** TODO How labs are run
-** TODO In this lab
+** How labs are run
+** In this lab
 
-* TODO Editing C++
-** TODO The Ed Environment
-** TODO Recommended Compilers
-** TODO Recommended Text Editors
-** TODO Recommended Extras
+* Editing C++
+** The Ed Environment
+** Recommended Compilers
+** Recommended Text Editors
+** Recommended Extras
 
 * First C++ Program
 Here is the classic /Hello World!/ program in C++.
@@ -68,8 +68,8 @@ int main() {
 #+RESULTS:
 : Hello World
 
-* TODO Reading Input
-**  TODO Reading a string
+* Reading Input
+** Reading a string
 We can use the src_C++[:exports code]{std::cin} to read inputs.
 
 #+begin_src C++ :main no :tangle 02_read_input/read_input.cpp :mkdirp yes
@@ -95,7 +95,7 @@ int main() {
 
 #+RESULTS:
 
-**  TODO Reading integers
+**  Reading integers
 Can we add two inputs?
 
 #+begin_src C++ :main no :tangle 03_add_input/add.cpp :mkdirp yes
@@ -113,7 +113,7 @@ int main() {
 }
 #+end_src
 
-* TODO Functions and Testing
+* Functions and Testing
 Let's make a factorial function.
 
 Recall that the factorial function $n!$ is defined as follows.
@@ -140,6 +140,8 @@ int factorial(int);
 #endif  // FACTORIAL_HPP
 #+end_src
 
+#+RESULTS:
+
 We can write in this file.
 
 #+begin_src C++ :main no :tangle 04_factorial/factorial.cpp :mkdirp yes
@@ -154,7 +156,7 @@ int factorial(int n) {
 }
 #+end_src
 
-** TODO Aside: Testing, Makefiles and Buildsystems
+** Aside: Testing, Makefiles and Buildsystems
 
 #+begin_src C++ :main no :tangle 04_factorial/tests.cpp :mkdirp yes
 #include <gtest/gtest.h>
@@ -371,4 +373,4 @@ void swap(int* ptr1, int* ptr2) {
 }
 #+end_src
 
-* TODO Classes in C++
+* Classes in C++
