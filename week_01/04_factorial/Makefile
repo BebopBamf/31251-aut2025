@@ -1,3 +1,4 @@
+CXX = clang++
 CFLAGS = -std=c++20 -Wall -Wextra -g
 
 .PHONY: clean
@@ -5,13 +6,13 @@ CFLAGS = -std=c++20 -Wall -Wextra -g
 all: factorial tests
 
 factorial: main.cpp factorial.o
-	clang++ $(CFLAGS) -isystem /opt/homebrew/include -L/opt/homebrew/lib -lgtest $^ -o $@
+	$(CXX) $(CFLAGS) $(shell pkg-config --cflags gtest) $(shell pkg-config --libs gtest) -o $@ $^
 
 tests: tests.cpp factorial.o
-	clang++ $(CFLAGS) -isystem /opt/homebrew/include -L/opt/homebrew/lib -lgtest -lgtest_main $^ -o $@
+	$(CXX) $(CFLAGS) $(shell pkg-config --cflags gtest) $(shell pkg-config --libs gtest gtest_main) -o $@ $^
 
 factorial.o: factorial.cpp
-	clang++ $(CFLAGS) -c $^
+	$(CXX) $(CFLAGS) -c $^
 
 clean:
 	rm -r *.dSYM
