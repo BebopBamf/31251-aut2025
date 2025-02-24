@@ -6,10 +6,10 @@ CFLAGS = -std=c++20 -Wall -Wextra -g
 all: factorial tests
 
 factorial: main.cpp factorial.o
-	$(CXX) $(CFLAGS) $(shell pkg-config --cflags gtest) $(shell pkg-config --libs gtest) -o $@ $^
+	$(CXX) $(CFLAGS) $(shell pkg-config --cflags --libs gtest) -o $@ $^
 
 tests: tests.cpp factorial.o
-	$(CXX) $(CFLAGS) $(shell pkg-config --cflags gtest) $(shell pkg-config --libs gtest gtest_main) -o $@ $^
+	$(CXX) $(CFLAGS) $(shell pkg-config --cflags --libs gtest) -o $@ $^
 
 factorial.o: factorial.cpp
 	$(CXX) $(CFLAGS) -c $^

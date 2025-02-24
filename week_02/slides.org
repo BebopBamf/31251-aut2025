@@ -3,15 +3,66 @@
 #+author: Euan Mendoza
 #+email: euan.mendoza@uts.edu.au
 #+date: Week 02
-* Week 2 Activity
+* TODO Week 2 Activity
 
 * Any Questions?
+Any burning questions from last week?
 
-* TODO My Integer Example and Github Repo
+* Class Overview
+ * Recap of last week and the MyInteger class.
+ * C Style Arrays, Strings and Errors (helpful for assignment 1).
+ * How to iterate through a vector.
+ * First algorithm excercise.
+ * Introduction to src_C++[:exports code]{std::vector}
+
+* TODO My Integer Example and GitHub Repo
 
 * TODO Warm-Up C-Style Arrays
-** TODO Static Arrays
+In the next couple weeks we will be looking at c++ container classes. In order to get a sense of how these work under the hood we need to spend a bit of time understanding c-style arrays (and strings). These form the foundations of the following classes.
+
+ * src_C++[:exports code]{std::array}
+ * src_C++[:exports code]{std::vector}
+ * src_C++[:exports code]{std::string}
+
+** Static Arrays
+Arrays in C++ can either be /static/ (created on the stack), or /dynamic/ (created on the heap).
+
+#+begin_src C++ :tangle 01_c_arrays/static_arr.cpp :mkdirp yes :results output
+#include <iostream>
+
+// here is an example of a dynamic array
+int main() {
+	// sizes of array needs to be known at compile time
+	int arr[2] = {1, 2};
+
+	std::cout << "Number 1: " << arr[0] << std::endl;
+	std::cout << "Number 2: " << arr[1] << std::endl;
+
+	// can change array contents
+	arr[1] = 30;
+	std::cout << "Number 1: " << arr[0] << std::endl;
+	std::cout << "Number 2: " << arr[1] << std::endl;
+
+	// at the end of the scope, the array will safely be popped from the
+	// stack
+}
+#+end_src
+
+#+RESULTS:
+: Number 1: 1
+: Number 2: 2
+: Number 1: 1
+: Number 2: 30
+
+Notice how in the previous code, the size of the array needed to be specified at compile time.
+
+What are the pros and cons?
+
 ** TODO Dynamic Arrays
+What if we need to know the amount of space required at runtime?
+
+Consider a program that reads a number $n$, reads $n$ integers and outputs the sum of the $n$ inputted integers. In C++ code it would look something like the following.
+
 ** TODO C Strings
 ** TODO Common Errors
 *** TODO Buffer Overflow
