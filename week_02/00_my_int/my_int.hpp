@@ -4,7 +4,7 @@
 namespace dsa {
 class int32_t {
     private:
-	int _value;
+	int value;
 
     public:
 	/**

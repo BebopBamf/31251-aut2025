@@ -15,20 +15,19 @@ We are given a $n$ length tuple of integers $\mathbb{Z}$, denoted $\mathbf{v}$. 
 Any burning questions from last week?
 
 * Class Overview
- * Recap of last week and the MyInteger class.
- * C Style Arrays, Strings and Errors (helpful for assignment 1).
- * How to iterate through a vector.
- * First algorithm excercise.
- * Introduction to src_C++[:exports code]{std::vector}
+  * Recap of last week and the MyInteger class.
+  * C Style Arrays, Strings and Errors (helpful for assignment 1).
+  * How to iterate through a vector.
+  * First algorithm excercise.
+  * Introduction to src_C++[:exports code]{std::vector}
 
 * TODO My Integer Example and GitHub Repo
 
 * TODO Warm-Up C-Style Arrays
 In the next couple weeks we will be looking at c++ container classes. In order to get a sense of how these work under the hood we need to spend a bit of time understanding c-style arrays (and strings). These form the foundations of the following classes.
-
- * src_C++[:exports code]{std::array}
- * src_C++[:exports code]{std::vector}
- * src_C++[:exports code]{std::string}
+  * src_C++[:exports code]{std::array}
+  * src_C++[:exports code]{std::vector}
+  * src_C++[:exports code]{std::string}
 
 ** Static Arrays
 Arrays in C++ can either be /static/ (created on the stack), or /dynamic/ (created on the heap).
