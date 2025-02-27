@@ -5,11 +5,17 @@
 #+date: Week 02
 * Week 2 Activity: Product of Array Except Self
 ** Problem Definition
-We are given a $n$ length tuple of integers $\mathbb{Z}$, denoted $\mathbf{v}$. We want to construct a tuple $\mathbf{x}$ such that each $i$ th entry of $\mathbf{x}$ is the product of all $\mathbf{v}$ modulo the $i$ th entry of $\mathbf{v}$.
+/INPUT:/ A $n$ tuple $\mathbf{x} = (x_{1}, x_{2}, \ldots, x_{n}), x_{1},\ldots,x_{n}\in \mathbb{Z}$.
+/GOAL:/ Construct a $n$ tuple $\mathbf{y}$ where
+
+\begin{align*}
+\end{align*}
 
 ** Brute-Force Solution?
  * How much time would it take?
  * Where can we go from here?
+
+** Optimal Solution?
 
 * Any Questions?
 Any burning questions from last week?

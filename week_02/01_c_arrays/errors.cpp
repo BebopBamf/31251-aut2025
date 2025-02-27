@@ -30,6 +30,6 @@ void dangling_pointer_null() {
 
 int main() {
 	// dangling_pointer();
-	// dangling_pointer_null();
+	dangling_pointer_null();
 	memory_leak();
 }

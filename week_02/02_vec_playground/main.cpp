@@ -9,7 +9,7 @@ int main() {
 	// int
 	std::cout << "Normal for loop\n";
 	for (std::size_t i = 0; i < vec.size(); i++) {
-		std::cout << vec[i] << " ";
+		std::cout << vec.at(i) << " ";
 	}
 	std::cout << "\n\n";
 
