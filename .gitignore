@@ -6,4 +6,7 @@ tmp/
 # C++ Files
 compile_commands.json
 .cache/
+*.o
+*.out
+*.gch
 *.dSYM/
