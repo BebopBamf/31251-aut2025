@@ -1,0 +1,6 @@
+#+title: 31251 Data Structures and Algorithms Tutorial
+#+author: Euan Mendoza
+#+email: euan.mendoza@uts.edu.au
+#+date: Week 02Slides
+
+* TODO Week 3 Activity
