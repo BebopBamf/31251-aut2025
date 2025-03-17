@@ -7,7 +7,7 @@ void memory_leak() {
 		for (std::size_t i = 0; i < 1024; i++) {
 			arr[i] = i * 5;
 		}
-		std::cout << std::endl;
+		// std::cout << std::endl;
 	}
 }
 
@@ -30,6 +30,6 @@ void dangling_pointer_null() {
 
 int main() {
 	// dangling_pointer();
-	dangling_pointer_null();
+	//dangling_pointer_null();
 	memory_leak();
 }
