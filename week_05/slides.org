@@ -1,0 +1,155 @@
+#+property: header-args :flags -std=c++20 -Wall -Wextra
+#+title: 31251 Data Structures and Algorithms Tutorial
+#+author: Euan Mendoza
+#+email: euan.mendoza@uts.edu.au
+#+date: Week 02
+* Week 2 Activity: Product of Array Except Self
+** Problem Definition
+/INPUT:/ A $n$ tuple $\mathbf{x} = (x_{1}, x_{2}, \ldots, x_{n}), x_{1},\ldots,x_{n}\in \mathbb{Z}$.
+/GOAL:/ Construct a $n$ tuple $\mathbf{y}$ where
+
+\begin{align*}
+\end{align*}
+
+** Brute-Force Solution?
+ * How much time would it take?
+ * Where can we go from here?
+
+** Optimal Solution?
+
+* Any Questions?
+Any burning questions from last week?
+
+* Class Overview
+  * Recap of last week and the MyInteger class.
+  * C Style Arrays, Strings and Errors (helpful for assignment 1).
+  * How to iterate through a vector.
+  * First algorithm excercise.
+  * Introduction to src_C++[:exports code]{std::vector}
+
+* TODO My Integer Example and GitHub Repo
+
+* TODO Warm-Up C-Style Arrays
+In the next couple weeks we will be looking at c++ container classes. In order to get a sense of how these work under the hood we need to spend a bit of time understanding c-style arrays (and strings). These form the foundations of the following classes.
+  * src_C++[:exports code]{std::array}
+  * src_C++[:exports code]{std::vector}
+  * src_C++[:exports code]{std::string}
+
+** Static Arrays
+Arrays in C++ can either be /static/ (created on the stack), or /dynamic/ (created on the heap).
+
+#+begin_src C++ :tangle 01_c_arrays/static_arr.cpp :mkdirp yes :results output
+#include <iostream>
+
+// here is an example of a dynamic array
+int main() {
+	// sizes of array needs to be known at compile time
+	int arr[2] = {1, 2};
+
+	std::cout << "Number 1: " << arr[0] << std::endl;
+	std::cout << "Number 2: " << arr[1] << std::endl;
+
+	// can change array contents
+	arr[1] = 30;
+	std::cout << "Number 1: " << arr[0] << std::endl;
+	std::cout << "Number 2: " << arr[1] << std::endl;
+
+	// at the end of the scope, the array will safely be popped from the
+	// stack
+}
+#+end_src
+
+#+RESULTS:
+: Number 1: 1
+: Number 2: 2
+: Number 1: 1
+: Number 2: 30
+
+Notice how in the previous code, the size of the array needed to be specified at compile time.
+
+What are the pros and cons?
+
+** TODO Dynamic Arrays
+What if we need to know the amount of space required at runtime?
+
+Consider a program that reads a number $n$, reads $n$ integers and outputs the sum of the $n$ inputted integers. In C++ code it would look something like the following.
+
+** TODO C Strings
+** TODO Common Errors
+*** TODO Buffer Overflow
+*** TODO Dangling Pointer
+*** TODO Memory Leak
+*** TODO Index out of bounds
+
+* TODO Iterating through a vector
+* TODO Product of Array Except Self
+* TODO Playing with std::vector
+* TODO Writing Custom Vector
+
+* First C++ Program
+Here is the classic /Hello World!/ program in C++.
+
+#+begin_src C++ :main no :tangle 01_hello_world/hello_world.cpp :mkdirp yes
+// We include the iostream library.
+// This library contains the declaration of
+// the cout object.
+#include <iostream>
+
+int main() {
+    // Standard library objects are put in a "namespace" called std.
+    // This is to avoid name collisions with names we define.
+    // To refer to objects in the std namespace we use the scope resolution
+    // operator ::, as in std::cout
+    std::cout << "Hello World\n";
+    return 0;
+}
+#+end_src
+
+#+RESULTS:
+: Hello World
+
+* Reading Input
+** Reading a string
+We can use the src_C++[:exports code]{std::cin} to read inputs.
+
+#+begin_src C++ :main no :tangle 02_read_input/read_input.cpp :mkdirp yes
+#include <iostream>
+// this time we will also use the string library
+#include <string>
+
+int main() {
+    // We initialise an empty string userInput
+    // The string class is provided by the standard
+    // library and is in the std namespace so we
+    // again access it with std:: using the
+    // scope resolution operator
+    std::string userInput{};
+    // use cin to read keyboard input into userInput
+    /***
+    your code here
+    ***/
+    // Now check it by printing out userInput
+    return 0;
+}
+#+end_src
+
+#+RESULTS:
+
+**  Reading integers
+Can we add two inputs?
+
+#+begin_src C++ :main no :tangle 03_add_input/add.cpp :mkdirp yes
+#include <iostream>
+
+// Write a function with two ints as
+// parameters that returns their sum
+
+int main() {
+    // Prompt the user to enter an integer.
+    // Prompt the user to enter another integer.
+    // Use your add function to sum the integers.
+    // Print out the result!
+    return 0;
+}
+#+end_src
+
