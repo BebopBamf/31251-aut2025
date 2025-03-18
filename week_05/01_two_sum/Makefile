@@ -13,4 +13,4 @@ two_sum.o: two_sum.cpp two_sum.hpp debug_log.hpp
 	$(CXX) $(CFLAGS) $(LDFLAGS) -c $^
 
 clean:
-	rm -r *.dSYM *.o *.gch *.out
+	rm -r *.dSYM *.o *.gch *.pch *.out
