@@ -9,4 +9,7 @@ compile_commands.json
 *.o
 *.out
 *.gch
+*.pch
 *.dSYM/
+
+week_05/02_hash_map/
