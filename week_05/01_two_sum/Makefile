@@ -1,5 +1,5 @@
 CXX = clang++
-CFLAGS = -std=c++20 -Wall -Wextra -Wpedantic -g -DDEBUG
+CFLAGS = -std=c++20 -Wall -Wextra -Werror -Wpedantic -g -DDEBUG
 LDFLAGS = -fsanitize=address,undefined
 
 .PHONY: clean
