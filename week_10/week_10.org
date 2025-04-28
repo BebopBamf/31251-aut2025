@@ -1,0 +1,10 @@
+#+title: Data Structures & Algorithms Tutorial
+#+author: Euan Mendoza
+#+email: euan.mendoza@uts.edu.au
+#+date: Week 10
+
+* TODO Graphs Review
+
+** TODO Graph Data Structures
+
+[[id:d2437c51-dcd8-4ca8-baf5-7f04eb9dbdcd][Graphs]]
