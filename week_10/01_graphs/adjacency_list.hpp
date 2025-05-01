@@ -6,16 +6,17 @@
 
 class adjacency_list : graph {
     private:
-	std::vector<std::vector<int> > m_edge_list;
+	std::vector<std::vector<vertex_t> > adj_list;
+	bool is_directed;
 
     public:
-	adjacency_list(int N, bool type);
+	adjacency_list(std::size_t N, bool directed);
 
-	void add_edge(int i, int j);
+	void add_edge(vertex_t u, vertex_t v);
 
-	void is_edge(int i, int j);
+	bool is_edge(vertex_t u, vertex_t v);
 
-	void adjacent_to(int v);
+	void adjacent_to(vertex_t v);
 
 	void display();
 
